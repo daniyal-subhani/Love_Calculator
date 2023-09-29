@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #175a86;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        display: block;
+      }
+      p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <br />
+    <p>Check Your Love Score</p>
+    <footer>
+      <p>&copy; Daniyal Subhani</p>
+    </footer>
+    <script>
+      let name = prompt("What is your name?");
+      let loveScore = Math.random(1) * 100;
+      loveScore = Math.floor(loveScore) + 1;
+      if (loveScore >= 90) {
+        alert(
+          " Hello " +
+            name +
+            ". Your love score is " +
+            loveScore +
+            "%" +
+            " you and Daniyal are best lovers ever "
+        );
+      } else if (loveScore < 30) {
+        alert(
+          "Hello " +
+            name +
+            ". Your love score is " +
+            loveScore +
+            "%" +
+            " you and Daniyal are going together like water and oil"
+        );
+      } else if (loveScore > 30 && loveScore <= 70) {
+        alert(
+          "Hello " +
+            name +
+            ". Your love score is " +
+            loveScore +
+            "% you and Daniyal are friends"
+        );
+      }
+    </script>
+  </body>
+</html>
